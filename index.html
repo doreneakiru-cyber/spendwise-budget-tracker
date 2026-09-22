@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker - SpendWise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section with Logo Image -->
+  <header class="main-header">
+    <!-- CORRECTED CODE -->
+<div style="display: flex; align-items: center; gap: 15px;">
+    <img src="file:///C:/Users/USER/Pictures/spending 1.png" alt="Spending chart analysis" width="50" class="logo">
+
+</div>
+
+    <h1>SpendWise Budget Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Interactive Collapsible Guide -->
+    <section class="instructions-section">
+      <details>
+        <summary>How to use this tracker</summary>
+        <p>Use the form below to add new expenses. Select a category, enter the amount, and click "Add Expense" to record your spending.</p>
+      </details>
+    </section>
+
+    <!-- Upgraded Add Expense Form -->
+    <section class="add-expense-section">
+      <h2>Add New Expense</h2>
+      <form id="expense-form">
+        <label for="expense-name">Name:</label>
+        <input type="text" id="expense-name" placeholder="e.g. Groceries">
+
+        <label for="expense-amount">Amount ($):</label>
+        <input type="number" id="expense-amount" placeholder="e.g. 50">
+
+        <label for="expense-category">Category:</label>
+        <select id="expense-category">
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Rent">Rent</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="expense-date">Date:</label>
+        <input type="date" id="expense-date">
+
+        <button type="button" id="add-btn">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Expense Table -->
+    <section class="expenses-section">
+      <h2>Expenses</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grocery Shopping</td>
+            <td>$120.00</td>
+            <td>Food</td>
+            <td>2026-09-18</td>
+          </tr>
+          <tr>
+            <td>Bus Pass</td>
+            <td>$45.00</td>
+            <td>Transport</td>
+            <td>2026-09-19</td>
+          </tr>
+          <tr>
+            <td>Monthly Rent</td>
+            <td>$850.00</td>
+            <td>Rent</td>
+            <td>2026-09-01</td>
+          </tr>
+          <tr>
+            <td>Movie Night</td>
+            <td>$25.00</td>
+            <td>Entertainment</td>
+            <td>2026-09-20</td>
+          </tr>
+          <tr>
+            <td>Electricity Bill</td>
+            <td>$60.00</td>
+            <td>Other</td>
+            <td>2026-09-21</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Embedded YouTube Video -->
+    <section class="media-section">
+      <h2>Budgeting Tips</h2>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/sVKQn2IftKc" 
+        title="Budgeting Video" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+</body>
+</html>
